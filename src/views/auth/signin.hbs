@@ -1,0 +1,25 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <div class="card mt-5 text-white rounded blur-bg custom-form-bg">
+      <div class="card-header text-center pt-5">
+        <h1 class="h4 text-white">Iniciar sesión</h1>
+      </div>
+      <img class="rounded-circle mx-auto d-block logo m-4" src="/img/acceso.png" alt="Logo" />
+      <div class="card-body">
+        <form action="/auth/signin" method="POST">
+          <div class="mb-3">
+            <!-- iconos <i class="fas fa-user" style="color: black;"></i> -->
+            <input type="email" class="rounded-4 form-control text-black" name="email" placeholder="Correo" autofocus />
+          </div>
+          <div class="mb-3">
+            <!-- iconos   <i class="fas fa-lock" style="color: black;"></i> -->
+            <input type="password" class="rounded-4 form-control text-black" name="password" placeholder="Contraseña" />
+          </div>
+          <button class="custom-button btn btn-secondary btn-block btn-center rounded-button"><i class="fas fa-sign-in-alt"></i> Ingresar</button>
+        </form>
+      </div>
+      <p class="text-center text-white">¿No tienes una cuenta? <a href="/auth/signup" class="text-info">Registrarse</a>
+      </p>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,41 @@
+<div class="row">
+  <div class="col-md-4 mx-auto">
+    <br> <br>
+    <div class="card text-black  rounded blur-bg custom-form-bg" >
+      <div class="card-header pt-5">
+        <h4 class="text-center text-white">
+          Crear cuenta
+        </h4>
+      </div>
+      <img class=" mx-auto d-block logo2 m-4" src="/img/agregar-usuario1.png" alt="Logo" />
+      <div class="card-body">
+        <form action="/auth/signup" method="POST">
+          <div class="mb-3">
+
+            <input type="text" class="rounded-4 form-control text-black" name="name" placeholder="Nombre" value="{{name}}" />
+          </div>
+          <div class="mb-3">
+
+            <input type="email" class="rounded-4 form-control  text-black" name="email" placeholder="Correo" value="{{email}}" />
+          </div>
+          <div class="mb-3">
+
+            <input type="password" class="rounded-4 form-control  text-black" name="password" placeholder="Contraseña"
+              value="{{password}}" />
+          </div>
+          <div class="mb-3">
+
+            <input type="password" class="rounded-4 form-control text-black" name="confirm_password"
+              placeholder="Confirme su contraseña" value="{{confirm_password}}" />
+          </div>
+          <button class="custom-button btn btn-secondary btn-block btn-center rounded-button"> <i class="fas fa-user"></i> Registrarse
+          </button>
+        </form>
+      </div>
+      <p class="text-center text-white">
+        ¿Ya tienes una cuenta?
+        <a href="/auth/signin" class="text-info">Iniciar sesion</a>
+      </p>
+    </div>
+  </div>
+</div>
